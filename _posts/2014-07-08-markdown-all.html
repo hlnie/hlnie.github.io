@@ -1,0 +1,363 @@
+
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>/* Fonts */
+@font-face{
+  font-family: octicons-anchor;
+  src: url(data:x-font-woff;charset=utf-8;base64,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) format('woff');
+}
+
+/* Body */
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body{
+  color:#4d4d4c;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman',
+              "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 45em;
+  margin: 10px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #f8f8f8;
+}
+
+/* Links */
+a{ color: #06d; text-decoration:none; }
+a:hover{ color: #06e; text-decoration: underline; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+::-moz-selection { background:rgba(255,255,0,0.3); color:#000 }
+::selection { background:rgba(255,255,0,0.3); color:#000 }
+
+a::-moz-selection { background:rgba(255,255,0,0.3); color:#0645ad }
+a::selection { background:rgba(255,255,0,0.3); color:#0645ad }
+
+/* Header Anchor Links*/
+a.headeranchor-link {
+  color:#111;
+  border: 0;
+  margin-left: -20px;
+  padding-right: 6px;
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+span.headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a.headeranchor-link:hover { text-decoration: none;}
+a.headeranchor-link:visited { color:#4d4d4c; }
+a.headeranchor-link:active { color:#4d4d4c; }
+a.headeranchor-link:hover span.headeranchor:before { content: '\f05c'; }
+h1:hover a span.headeranchor:before { content: '\f05c'; }
+h2:hover a span.headeranchor:before { content: '\f05c'; }
+h3:hover a span.headeranchor:before { content: '\f05c'; }
+h4:hover a span.headeranchor:before { content: '\f05c'; }
+h5:hover a span.headeranchor:before { content: '\f05c'; }
+h6:hover a span.headeranchor:before { content: '\f05c'; }
+
+/* Paragraphs */
+p { margin:1em 0; }
+
+/* Images */
+img {
+  max-width:100%;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* Headers */
+h1,h2,h3,h4,h5,h6 {
+  font-weight:normal;
+  color:#111;
+  line-height: 1.7;
+  position: relative;
+}
+h4,h5,h6{ font-weight: bold; }
+h1 { font-size:2.5em; border-bottom: 1px solid #ddd;}
+h2 { font-size:2em; border-bottom:1px solid #eee; padding-bottom: 5px; }
+h3 { font-size:1.5em; }
+h4 { font-size:1.2em; }
+h5 { font-size:1em; }
+h6 { font-size:0.9em; }
+
+/* Block Quotes */
+blockquote {
+  color:#666666;
+  margin:0;
+  padding-left: 3em;
+  border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+/* Raw Blocks */
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0 3px 0 3px;
+}
+
+pre, code, kbd, samp {
+  color: #000;
+  font-family: monospace;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 0.88em;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 10px;
+}
+
+pre code { border: 0 }
+
+code { padding: 0 3px 0 3px; }
+
+/* Multimarkdown Critic Blocks */
+span.critic_mark { background: #ff0; }
+span.critic_delete { color: #c82829; text-decoration: line-through; }
+span.critic_insert { color: #718c00 ; text-decoration: underline; }
+span.critic_comment { color: #8e908c; font-style: italic; }
+
+/* Inlines */
+b, strong { font-weight: bold; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+dfn { font-style: italic; }
+
+/* Lists */
+ul, ol { margin: 0.5em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+li.task-list-item { list-style-type: none; margin-left: -1.5em; }
+li.task-list-item input { margin-right: .5em; }
+li.task-list-item ul, li.task-list-item ol { margin-left: 1.5em; }
+dd { margin: 0 0 0 2em; }
+
+/* Tables */
+table { border-collapse: collapse; border: 1px solid #ddd; }
+table tr:nth-child(2n) { background-color: #f8f8f8; }
+td, th { border: 1px solid #ddd; padding: 6px 13px; }
+
+/* Codehilite Tables */
+table.codehilitetable { border: 0; border-spacing: 0; width: 100%; }
+td.linenos, td.code, table.codehilitetable td { border: 0; padding: 0; }
+table.codehilitetable td:not(.linenos) div.linenodiv { padding: 0 !important; }
+td.code { width: 100%; }
+table.codehilitetable td.linenos div pre, td div.linenodiv pre {
+  border: 0;
+  border-top: 1px solid #CCC;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+table.codehilitetable td.code div pre {
+  border: 0;
+  border-top: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  body{ font-size:14px; }
+}
+
+@media only screen and (min-width: 768px) {
+  body{ font-size:16px; }
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{ font-size:12pt; max-width:100%; outline:none; border: 0;}
+  a, a:visited { text-decoration: underline; }
+  a.headeranchor-link { display: none; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+</style><title># 欢迎使用 Cmd - 在线 Markdown 编辑阅读器</title></head><body><h1 id="cmd-markdown"><a name="user-content-cmd-markdown" href="#cmd-markdown" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>欢迎使用 Cmd - 在线 Markdown 编辑阅读器</h1>
+<hr />
+<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。</p>
+<p>您可以使用 Cmd Markdown：</p>
+<blockquote>
+<ul>
+<li>整理知识，学习笔记</li>
+<li>发布日记，杂文，所见所想</li>
+<li>撰写发布技术文稿（代码支持）</li>
+<li>撰写发布学术论文（LaTeX 公式支持）</li>
+</ul>
+</blockquote>
+<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
+<hr />
+<h2 id="markdown"><a name="user-content-markdown" href="#markdown" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>什么是 Markdown</h2>
+<p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
+<h3 id="1"><a name="user-content-1" href="#1" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>书写一个质能守恒公式<sup id="fnref:LaTeX"><a class="footnote-ref" href="#fn:LaTeX" rel="footnote">1</a></sup></h3>
+<p>$$E=mc^2$$</p>
+<h3 id="2"><a name="user-content-2" href="#2" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>高亮一段代码<sup id="fnref:code"><a class="footnote-ref" href="#fn:code" rel="footnote">2</a></sup></h3>
+<pre><code class="python">@requires_authorization
+class SomeClass:
+    pass
+
+if __name__ == '__main__':
+    # A comment
+    print 'hello world'
+</code></pre>
+
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图">流程图</a></h3>
+<pre><code class="flow">st=&gt;start: Start
+op=&gt;operation: Your Operation
+cond=&gt;condition: Yes or No?
+e=&gt;end
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+</code></pre>
+
+<h3 id="_2"><a name="user-content-_2" href="#_2" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-序列图">序列图</a></h3>
+<pre><code class="seq">Alice-&gt;Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob--&gt;Alice: I am good thanks!
+</code></pre>
+
+<h3 id="_3"><a name="user-content-_3" href="#_3" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>绘制表格</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>价格</th>
+<th>数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计算机</td>
+<td>$1600</td>
+<td>5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td>$12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td>$1</td>
+<td>234</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4"><a name="user-content-_4" href="#_4" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>更详细语法说明</h3>
+<p>想要查看更详细的语法说明，可以参考我们准备的 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown">Cmd Markdown 简明语法手册</a>，进阶用户可以参考 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册">Cmd Markdown 高阶语法手册</a> 了解更多高级功能。</p>
+<p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p>
+<hr />
+<h2 id="cmd-markdown_1"><a name="user-content-cmd-markdown_1" href="#cmd-markdown_1" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>什么是 Cmd Markdown</h2>
+<p>您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p>
+<h3 id="1_1"><a name="user-content-1_1" href="#1_1" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>1. 实时同步预览</h3>
+<p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p>
+<h3 id="2_1"><a name="user-content-2_1" href="#2_1" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>2. 编辑工具栏</h3>
+<p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p>
+<p><img alt="tool-editor" src="https://www.zybuluo.com/static/img/toolbar-editor.png" /></p>
+<h3 id="3"><a name="user-content-3" href="#3" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>3. 编辑模式</h3>
+<p>完全心无旁骛的方式编辑文字：点击 <strong>编辑工具栏</strong> 最右测的拉伸按钮或者按下 <code>Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p>
+<h3 id="4"><a name="user-content-4" href="#4" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>4. 实时的云端文稿</h3>
+<p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 <code>已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p>
+<h3 id="5"><a name="user-content-5" href="#5" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>5. 离线模式</h3>
+<p>在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。</p>
+<h3 id="6"><a name="user-content-6" href="#6" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>6. 管理工具栏</h3>
+<p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p>
+<p><img alt="tool-manager" src="https://www.zybuluo.com/static/img/toolbar-manager.jpg" /></p>
+<p>通过管理工具栏可以：</p>
+<p><i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享<br />
+<i class="icon-file"></i> 新建：开始撰写一篇新的文稿<br />
+<i class="icon-trash"></i> 删除：删除当前的文稿<br />
+<i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地<br />
+<i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作<br />
+<i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式</p>
+<h3 id="7"><a name="user-content-7" href="#7" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>7. 阅读工具栏</h3>
+<p><img alt="tool-manager" src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" /></p>
+<p>通过 <strong>预览区</strong> 右上角的 <strong>阅读工具栏</strong>，可以查看当前文稿的目录并增强阅读体验。</p>
+<p>工具栏上的五个图标依次为：</p>
+<p><i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落<br />
+<i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置<br />
+<i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！<br />
+<i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验<br />
+<i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</p>
+<h3 id="8"><a name="user-content-8" href="#8" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>8. 阅读模式</h3>
+<p>在 <strong>阅读工具栏</strong> 点击 <i class="icon-desktop"></i> 或者按下 <code>Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。</p>
+<h3 id="9"><a name="user-content-9" href="#9" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>9. 标签、分类和搜索</h3>
+<p>在编辑区任意行首位置输入以下格式的文字可以标签当前文档：</p>
+<p>标签： 未分类</p>
+<p>标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：</p>
+<p><img alt="file-list" src="https://www.zybuluo.com/static/img/file-list.png" /></p>
+<h3 id="10"><a name="user-content-10" href="#10" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>10. 文稿发布和分享</h3>
+<p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！</p>
+<hr />
+<p>再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p>
+<p>作者 <a href="http://weibo.com/ghosert">@ghosert</a>   <br />
+2014 年 07月 07日    </p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:LaTeX">
+<p>支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax</a> 参考更多使用方法。&#160;<a class="footnote-backref" href="#fnref:LaTeX" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:code">
+<p>代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。&#160;<a class="footnote-backref" href="#fnref:code" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></body></html>
